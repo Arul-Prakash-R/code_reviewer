@@ -1,0 +1,9 @@
+<%@ page import="java.io.*" %>
+<html>
+<body>
+<%
+    String input = request.getParameter("input"); // ?input=<script>alert(1)</script>
+    out.println("Input was: " + input);
+%>
+</body>
+</html>
