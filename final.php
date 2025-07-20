@@ -66,5 +66,3 @@ if (isset($_GET['page'])) {
 
 <
 
-sdghg
-sddsggddhghg
