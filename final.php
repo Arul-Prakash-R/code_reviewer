@@ -65,6 +65,3 @@ if (isset($_GET['page'])) {
 ?>
 
 <
-
-dghgsdgsdsgfhfhghfghfghhhfgghghgghghghhggfgsdfddsd
-hgfhfhdsdsdsddsds
