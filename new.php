@@ -84,6 +84,4 @@ function update() {
 
 </body>
 </html>
-ggg
-jghhg
-khhggh
+
