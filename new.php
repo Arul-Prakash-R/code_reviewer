@@ -81,5 +81,3 @@ function update() {
 
 </body>
 </html>
-xhh
-jjgh
