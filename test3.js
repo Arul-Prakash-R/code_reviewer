@@ -11,4 +11,3 @@ mongodb.MongoClient.connect('mongodb://localhost:27017', (err, client) => {
     });
     app.listen(3000);
 });
-ddf
