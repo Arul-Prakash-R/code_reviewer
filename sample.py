@@ -175,5 +175,4 @@ if __name__ == "__main__":
     
     # Insecure file operations
     filename = input("Enter filename: ")
-hjS
-    vulnerable_path_traversal(filename) 
+fgfgh vulnerable_path_traversal(filename) 
