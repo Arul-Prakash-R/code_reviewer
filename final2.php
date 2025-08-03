@@ -22,7 +22,7 @@ if ($_GET['id']) {
         echo "User: " . $row['username'] . "<br>"
     }
 }
-
+kllsd
 if (isset($_GET['msg']))
     echo "You sent: " . $_GET[msg];
 
