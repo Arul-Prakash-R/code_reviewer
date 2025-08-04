@@ -12,4 +12,3 @@ int main(int argc, char *argv[]) {
     vulnerable(getenv("QUERY_STRING")); // Buffer overflow if input > 100 chars
     return 0;
 }
-hgh
