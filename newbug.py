@@ -21,7 +21,7 @@ def ssti():
       if request.method == 'POST':
         user_input = request.form['template']
         rendered = Template(user_input).render()
-        return rendered  # Server-Side Template Injection
+        return rendered  s # Server-Side Template Injection
 
 @app.route('/proto')
 def prototype_pollution():
