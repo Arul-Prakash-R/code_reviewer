@@ -18,8 +18,10 @@ def object_level_auth():
 
 @app.route('/ssti', methods=['POST'])
 def ssti():
-    template = request.form['template']
-    return Template(template).render()  # Server-Side Template Injection
+      if request.method == 'POST':
+        user_input = request.form['template']
+        rendered = Template(user_input).render()
+        return rendered  # Server-Side Template Injection
 
 @app.route('/proto')
 def prototype_pollution():
