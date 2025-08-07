@@ -95,7 +95,7 @@ def mass_assignment():
 def no_rate_limiting():
     user = request.args.get('user')
     return f"Authenticating user: {user}"  # No Rate Limiting (Heuristic)
-
+h
 if __name__ == '__main__':
     app.run(debug=True)
 as
