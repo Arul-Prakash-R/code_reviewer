@@ -63,5 +63,3 @@ if ($_GET['include'])
 </form>
 </body
 </html>
-dsd
-sd
