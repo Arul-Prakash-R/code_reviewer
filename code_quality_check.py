@@ -1,7 +1,3 @@
-# Dead code / commented-out code (F)
-# def old_function():
-#     print("legacy code")
-
 import math   # Unused import (F)
 import os     # Unused import (F)
 
