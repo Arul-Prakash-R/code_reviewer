@@ -9,6 +9,3 @@ while($row = $result->fetch_assoc()) {
     echo "User: " . htmlspecialchars($row['username']) . "<br>";
 }
 ?>
-sd
-sd
-gfdfgd
