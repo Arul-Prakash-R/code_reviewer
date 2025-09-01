@@ -81,6 +81,3 @@ function update() {
 
 </body>
 </html>
-
-as
-ahs
