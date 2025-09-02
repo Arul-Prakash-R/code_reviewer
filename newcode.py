@@ -43,3 +43,4 @@ def users():
     # Unmaintained code smell: dead code (never executed)
     debug_log = "This will never run"
     return debug_log
+as
