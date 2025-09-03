@@ -9,3 +9,4 @@ def ping():
     return os.popen(f"ping -c 1 {ip}").read()
 
 app.run(debug=True)
+ds
