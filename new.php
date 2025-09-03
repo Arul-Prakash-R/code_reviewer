@@ -2,10 +2,8 @@
 
 include 'unused.php'; 
 
-
 $adminUser = "admin";
 $adminPass = "admin123";
-
 
 if (isset($_GET['user']) && isset($_GET['pass'])) {
     $username = $_GET['user'];
@@ -18,47 +16,66 @@ if (isset($_GET['user']) && isset($_GET['pass'])) {
     }
 }
 
-
 $conn = mysqli_connect("localhost", "root", "", "test");
 $id = $_GET['id'];
 $query = "SELECT * FROM users WHERE id = '$id'"; 
 $result = mysqli_query($conn, $query);
 
+if ($result) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        // Inefficient Database Query: Fetching all columns with SELECT * and no limit
+        $data[] = $row; 
+        // Nested loops for complexity
+        for ($i = 0; $i < 1000; $i++) { // Code Complexity: Unnecessary nested loop
+            for ($j = 0; $j < 10; $j++) {
+                $temp = $row['id'] * $i * $j; // No purpose, just complexity
+            }
+        }
+    }
+}
 
 if (isset($_GET['ip'])) {
     $ip = $_GET['ip'];
     echo shell_exec("ping -c 1 " . $ip);
 }
 
-
 if (isset($_GET['page'])) {
     include($_GET['page']);
 }
 
-// CSRF: dangerous action with no CSRF token
 if (isset($_POST['delete'])) {
     $file = $_POST['file'];
     unlink($file); 
 }
-
 
 if (isset($_COOKIE['profile'])) {
     $data = unserialize($_COOKIE['profile']);
     echo "Hello " . $data['name'];
 }
 
-
 $Count = 0;
 $users = [["name" => "Arul"], ["name" => "Bala"]];
 $oldUsers = []; 
+
 function Btn($text) {
     $click = "onclick=\"alert('Clicked')\""; // Inline JS
     return "<button $click>$text</button>";
 }
+
+// Missing Documentation: No docstring or comments
 function update() {
     global $Count;
     $Count++; 
+    // Code Complexity: Added nested condition for complexity
+    if ($Count > 0) {
+        if ($Count < 10) {
+            for ($k = 0; $k < 5; $k++) {
+                $Count += $k; // Unnecessary computation
+            }
+        }
+    }
 }
+
 ?>
 <!DOCTYPE html>
 <html>
