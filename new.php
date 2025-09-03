@@ -1,6 +1,6 @@
 <?php
 
-include 'unused.php'; 
+include 'unused.php';
 
 $adminUser = "admin";
 $adminPass = "admin123";
@@ -18,15 +18,15 @@ if (isset($_GET['user']) && isset($_GET['pass'])) {
 
 $conn = mysqli_connect("localhost", "root", "", "test");
 $id = $_GET['id'];
-$query = "SELECT * FROM users WHERE id = '$id'"; 
+$query = "SELECT * FROM users WHERE id = '$id'";
 $result = mysqli_query($conn, $query);
 
 if ($result) {
     while ($row = mysqli_fetch_assoc($result)) {
         // Inefficient Database Query: Fetching all columns with SELECT * and no limit
-        $data[] = $row; 
-        // Nested loops for complexity
-        for ($i = 0; $i < 1000; $i++) { // Code Complexity: Unnecessary nested loop
+        $data[] = $row;
+        // Code Complexity: Unnecessary nested loop
+        for ($i = 0; $i < 1000; $i++) {
             for ($j = 0; $j < 10; $j++) {
                 $temp = $row['id'] * $i * $j; // No purpose, just complexity
             }
@@ -45,7 +45,7 @@ if (isset($_GET['page'])) {
 
 if (isset($_POST['delete'])) {
     $file = $_POST['file'];
-    unlink($file); 
+    unlink($file);
 }
 
 if (isset($_COOKIE['profile'])) {
@@ -55,17 +55,17 @@ if (isset($_COOKIE['profile'])) {
 
 $Count = 0;
 $users = [["name" => "Arul"], ["name" => "Bala"]];
-$oldUsers = []; 
+$oldUsers = [];
 
 function Btn($text) {
-    $click = "onclick=\"alert('Clicked')\""; // Inline JS
+    $click = "onclick=\"alert('Clicked')\"";
     return "<button $click>$text</button>";
 }
 
 // Missing Documentation: No docstring or comments
 function update() {
     global $Count;
-    $Count++; 
+    $Count++;
     // Code Complexity: Added nested condition for complexity
     if ($Count > 0) {
         if ($Count < 10) {
@@ -83,19 +83,16 @@ function update() {
     <title>My App</title>
 </head>
 <body style="background-color: #fff; color: #fff;">
+    <h1>Welcome</h1>
+    <p><?= Btn("Click Me") ?></p>
 
-<h1>Welcome</h1>
-<p><?= Btn("Click Me") ?></p>
+    <img src="logo.png" alt="Application Logo"> <!-- Added alt for accessibility -->
+    <a href="#">Click here</a>
+    <input type="text">
 
-<img src="logo.png"> 
-<a href="#">Click here</a> 
-<input type="text"> 
-
-<form method="post">
-    <input type="text" name="file">
-    <button name="delete">Delete File</button>
-</form>
-
+    <form method="post">
+        <input type="text" name="file">
+        <button name="delete">Delete File</button>
+    </form>
 </body>
 </html>
-sd
