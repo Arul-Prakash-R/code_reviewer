@@ -61,5 +61,3 @@ if (isset($_POST['update'])) {
 </html>
 document.write(location.hash)
 response.headers['Location'] = user_input
-sd
-sd
