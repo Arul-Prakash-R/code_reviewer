@@ -29,3 +29,4 @@ A GitHub App that scans repositories for security vulnerabilities using AI model
 ## Notes
 - You need to create and configure a GitHub App (see GitHub docs)
 - For advanced scanning, customize `scanner.py` with your preferred Hugging Face model "# code_reviewer" 
+g
