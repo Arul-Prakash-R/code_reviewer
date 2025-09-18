@@ -63,6 +63,3 @@ document.write(location.hash)
 response.headers['Location'] = user_input
 
 khjk
-sd
-dfdf
-dffd
