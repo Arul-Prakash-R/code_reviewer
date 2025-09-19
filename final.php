@@ -1,4 +1,4 @@
-fdf<?php
+<?php
 
 include 'unused.php';
 require 'axios.php';
