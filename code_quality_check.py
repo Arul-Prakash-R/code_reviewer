@@ -56,3 +56,4 @@ def critical_logic(a, b):
 # Potential large bundle / bloat simulation (F)
 big_data = ["x" * 1000 for _ in range(10000)]  # memory bloat
 ds
+df
