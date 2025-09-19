@@ -60,4 +60,4 @@ if (isset($_POST['update'])) {
 </body>
 </html>
 document.write(location.hash)
-response.headers['Location'] = user_input
+response.headers['Location'] =ds user_input
