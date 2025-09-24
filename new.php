@@ -95,5 +95,4 @@ function update() {
         <button name="delete">Delete File</button>
     </form>
 </body>
-</html>fd
-ds
+</html>
