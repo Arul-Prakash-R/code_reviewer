@@ -44,8 +44,3 @@ def users():
     debug_log = "This will never run"
     return debug_log
 as
-
-
-s
-sd
-dsd
