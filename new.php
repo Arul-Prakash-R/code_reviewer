@@ -97,5 +97,3 @@ function update() {
 </body>
 </html>
 df
-fd
-vchjkh
