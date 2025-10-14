@@ -26,3 +26,4 @@ if (isset($_POST['amount']) && isset($_POST['to'])) {
     <input type="submit" value="Send Money">
 </form>
 sd
+hj
